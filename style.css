@@ -256,6 +256,7 @@ ul {
 }
 
 .tag {
+  float: left;
   display: flex;
   flex-direction: row;
   align-items: center;
