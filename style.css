@@ -4,9 +4,7 @@ h3,
 p,
 a {
   font-weight: bold;
-  font-family:
-    'Poppins',
-    sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -279,6 +277,7 @@ ul {
 }
 
 .tagj {
+  float: right;
   display: flex;
   flex-direction: row;
   align-items: center;
