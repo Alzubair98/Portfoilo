@@ -572,16 +572,15 @@ ul {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 5700px;
-  margin-left:30px ;
-
+  top: 5650px;
+  margin-left: 30px;
 }
 
-.name-input{
+.name-input {
   position: abosulte;
   height: 38px;
   width: 400px;
-  border: 1px solid #CFD8DC;
+  border: 1px solid #cfd8dc;
   border-radius: 8px;
 
   font-style: normal;
@@ -591,21 +590,20 @@ ul {
   align-items: center;
   color: #000;
   padding: 10px;
-  
 }
 
-.text-box{
+.text-box {
   width: 400px;
   background: #fff;
-  border:  1px solid #CFD8DC;
+  border: 1px solid #cfd8dc;
   border-radius: 8px;
   padding: 10px;
+  text-align: left;
 }
 
 .contact-btn {
   display: flex;
-  top: 6050px;
+  top: 6010px;
   position: absolute;
   margin-left: 30px;
 }
-
