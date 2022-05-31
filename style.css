@@ -544,16 +544,17 @@ ul {
   line-height: 52px;
   color: #fff;
 }
+
 .contactmepara {
   display: flex;
   position: absolute;
   width: 327px;
   height: 102px;
   margin-left: 80px;
-
   top: 5460px;
   text-align: center;
 }
+
 .contactme-p {
   position: absolute;
   font-style: normal;
@@ -582,7 +583,6 @@ ul {
   width: 400px;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
-
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
