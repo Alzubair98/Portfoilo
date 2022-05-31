@@ -347,20 +347,20 @@
           </p>
         </div>
 
-        <form action="#" class="contact-information">
-          <input class="name-input" type="text" name="username" placeholder="alzubair" maxlength="30" />
+        <form action="https://formspree.io/f/{form_id}" method="post" class="contact-information" >
+          <input class="name-input" type="text" name="username" placeholder="alzubair" maxlength="30" required>
           <input
             class="name-input"
             type="email"
             name="usermail"
             placeholder="youremail@gmail.com"
-            required/>
+            required>
           
-          <textarea class="text-box" name="msg" id="message" cols="30" rows="10" maxlength="500">
+          <textarea class="text-box" name="msg" id="message" cols="30" rows="10" maxlength="500" required>
             Write your message here.</textarea>
-          
+            <button type="submit" class="normal contact-btn">Get in touch</button>
         </form>
-        <button type="button" class="normal contact-btn">Get in touch</button>
+        
       </footer>
     </section>
   </body>
