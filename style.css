@@ -276,7 +276,6 @@ ul {
 }
 
 .tagj {
-  
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -509,59 +508,73 @@ ul {
   height: 72px;
 }
 
+/* contact-me */
 
-  /* contact-me */
+.contact-me-img {
+  position: absolute;
+  width: 480px;
+  height: 779px;
+  z-index: -1;
+  top: 5200px;
+  margin-top: 30px;
+}
 
-  .contact-me-img{
-    position: absolute;
-    width: 480px;
-    height: 779px;
-    z-index: -1;
-    top: 5200px;
-    margin-top: 30px;
-  }
-  
-  .contact-shapes{
-    position: absolute;
-    z-index: 1;
-    top: 30px;
-    height: 1000px;
-    left: 180px;
-  }
-  
-  
-  .contact-text{
-    position: absolute;
-    top: 5370px;
-    display: flex;
-    margin-left: 120px;
-  }
-  
-  .Contactme{
-    position: absolute;
-    width: 801px;
-    height: 56px;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 40px;
-    line-height: 52px;
-    color: #fff;
-  }
-  .contactmepara{
-    display: flex;
-    position: absolute;
-    width: 327px;
-    height: 102px;
-    margin-left: 80px;
-    
-    top: 5460px;
-    text-align: center;
-  }
-  .contactme-p{
-    position: absolute;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-    color: #EBEBFF;
-  }
+.contact-shapes {
+  position: absolute;
+  z-index: 1;
+  top: 30px;
+  height: 1000px;
+  left: 180px;
+}
+
+.contact-text {
+  position: absolute;
+  top: 5370px;
+  display: flex;
+  margin-left: 120px;
+}
+
+.Contactme {
+  position: absolute;
+  width: 801px;
+  height: 56px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 52px;
+  color: #fff;
+}
+.contactmepara {
+  display: flex;
+  position: absolute;
+  width: 327px;
+  height: 102px;
+  margin-left: 80px;
+
+  top: 5460px;
+  text-align: center;
+}
+.contactme-p {
+  position: absolute;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ebebff;
+}
+
+.contact-information {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 5770px;
+}
+
+.contact-btn {
+  display: flex;
+  top: 6120px;
+  position: absolute;
+}
