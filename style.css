@@ -254,7 +254,6 @@ ul {
 }
 
 .tag {
-  float: left;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -277,7 +276,7 @@ ul {
 }
 
 .tagj {
-  float: right;
+  
   display: flex;
   flex-direction: row;
   align-items: center;
