@@ -607,3 +607,25 @@ ul {
   position: absolute;
   left: 0;
 }
+
+
+
+/* Desktop-version */
+
+@media(min-width : 768px){
+  .section-2 {
+    background-image: url(Microverse-Student-Project-1/big-img2.png);
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+    width: 100%;
+  }
+
+  .paragraph {
+    margin-top: 100px;
+    margin-left: 390px;
+    margin-right: 390px;
+    text-align: left;
+  }
+  
+}
