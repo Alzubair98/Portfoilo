@@ -619,6 +619,7 @@ ul {
     flex-direction: column;
     max-height: 100vh;
     width: 100%;
+    margin-bottom: 0;
   }
 
   .paragraph {
@@ -626,6 +627,63 @@ ul {
     margin-left: 390px;
     margin-right: 390px;
     text-align: left;
+  }
+
+  .section-3 {
+    display: grid;
+    vertical-align: bottom;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    gap: 142px;
+    padding: 142px;
+
+    width: 1440px;
+    height: 2694px;
+  }
+
+  .card{
+    width: 1156px;
+    height: 496px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 24px;
+    gap: 50px;
+    position: relative;
+  }
+
+  .work-img {
+    width: 544px;
+    height: 448px;
+    border-radius: 8px;
+  }
+
+  .left-block{
+    position:absolute;
+    right: 190px;
+    top: 30px;
+    gap: 8px;
+  }
+
+
+  .work-img1{
+    width: 544px;
+    height: 448px;
+    border-radius: 8px;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+  }
+
+  .left-block1{
+    position: absolute;
+    left: 50px;
+    top: 30px;
+  }
+
+  .des-text {
+    width: 500px;
+    height: 50px;
+    margin-top: 40px;
   }
   
 }
