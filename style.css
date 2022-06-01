@@ -26,6 +26,10 @@ body {
   margin: 3% 0% 0% 3%;
 }
 
+.orders {
+  display: none;
+}
+
 .button {
   margin: 5%;
 }
@@ -612,7 +616,20 @@ ul {
 
 /* Desktop-version */
 
-@media(min-width : 768px){
+@media (min-width: 768px) {
+  .button1 {
+    display: none;
+  }
+
+  .orders {
+    display: flex;
+    gap: 10px;
+    color: #344563;
+    text-decoration: none;
+    margin-top: 3%;
+    margin-right: 3%;
+  }
+
   .section-2 {
     background-image: url(Microverse-Student-Project-1/big-img2.png);
     display: flex;
@@ -636,12 +653,11 @@ ul {
     margin-bottom: 30px;
     gap: 142px;
     padding: 142px;
-
     width: 1440px;
     height: 2694px;
   }
 
-  .card{
+  .card {
     width: 1156px;
     height: 496px;
     display: flex;
@@ -657,15 +673,14 @@ ul {
     border-radius: 8px;
   }
 
-  .left-block{
-    position:absolute;
+  .left-block {
+    position: absolute;
     right: 190px;
     top: 30px;
     gap: 8px;
   }
 
-
-  .work-img1{
+  .work-img1 {
     width: 544px;
     height: 448px;
     border-radius: 8px;
@@ -674,7 +689,7 @@ ul {
     top: 30px;
   }
 
-  .left-block1{
+  .left-block1 {
     position: absolute;
     left: 50px;
     top: 30px;
@@ -685,5 +700,118 @@ ul {
     height: 50px;
     margin-top: 40px;
   }
-  
+
+  /* about my self section */
+
+  .about-my-self {
+    width: 1500px;
+    height: 942px;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .skill {
+    position: absolute;
+    width: 884px;
+    right: 200px;
+    top: 4200px;
+  }
+
+  .items-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .frame9 {
+    width: 122px;
+    height: 120px;
+    position: relative;
+  }
+
+  .javaS {
+    position: absolute;
+    height: 24px;
+    left: 10px;
+    right: 12px;
+    top: 60px;
+  }
+
+  .top {
+    position: absolute;
+    left: 200px;
+    top: 4270px;
+    width: 500px;
+  }
+
+  .first-text {
+    margin-bottom: 10px;
+  }
+
+  .second-text {
+    margin-top: 0;
+    width: 450px;
+  }
+
+  /* contact me section */
+
+
+
+  .contact-me-img {
+    background: url(Microverse-Student-Project-1/fimg.png)  #6070ff no-repeat;
+    background-size: 99%;
+    background-position-y: center;
+    position: absolute;
+    width: 100%;
+    height: 920px;
+    top: 4900px;
+    margin-top: 20px;
+  }
+
+  .contactme-img {
+    display: none;
+  }
+
+
+  .contact-text {
+    position: absolute;
+    top: 5100px;
+    margin-left: 400px;
+    text-align: center;
+  }
+
+  .contactmepara {
+    display: flex;
+    width: 569px;
+    height: 102px;
+    position: absolute;
+    top: 5200px;
+    margin-left: 520px;
+    text-align: center;
+  }
+
+  .contact-information {
+    margin-left: 590px;
+    position: absolute;
+    top: 5350px;
+  }
+
+  .name-input {
+    border-radius: 0;
+  }
+
+  .text-box {
+    border-radius: 0;
+  }
+
+  .contact-btn {
+    display: flex;
+    position: absolute;
+    left: 150px;
+  }
+
+  .contact-shapes {
+    display: none;
+  }
 }
