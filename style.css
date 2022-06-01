@@ -612,8 +612,6 @@ ul {
   left: 0;
 }
 
-
-
 /* Desktop-version */
 
 @media (min-width: 768px) {
@@ -756,8 +754,6 @@ ul {
 
   /* contact me section */
 
-
-
   .contact-me-img {
     background: url(Microverse-Student-Project-1/fimg.png)  #6070ff no-repeat;
     background-size: 99%;
@@ -772,7 +768,6 @@ ul {
   .contactme-img {
     display: none;
   }
-
 
   .contact-text {
     position: absolute;
