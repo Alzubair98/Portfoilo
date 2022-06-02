@@ -652,7 +652,7 @@ ul {
     flex-direction: column;
     height: 1000px;
     width: 100%;
-    border-bottom-left-radius: 10%;
+    border-bottom-left-radius: 70px;
     margin-bottom: 0;
   }
 
@@ -725,6 +725,7 @@ ul {
     height: 942px;
     background-color: #fff;
     border-top-right-radius: 80px;
+    border-top-right-radius: 10%;
   }
 
   .about-my-self {
@@ -798,6 +799,7 @@ ul {
   }
 
   /* contact me section */
+
   .contact-me-img {
     background: url(Microverse-Student-Project-1/fimg.png)  #6070ff no-repeat;
     background-size: 99%;
