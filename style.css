@@ -619,27 +619,46 @@ ul {
     display: none;
   }
 
+  .first-img {
+    display: none;
+  }
+
   .orders {
     display: flex;
     gap: 10px;
     color: #344563;
     text-decoration: none;
-    margin-top: 3%;
+    margin-top: 4%;
     margin-right: 3%;
   }
 
+  .container {
+    position: relative;
+    width: 1503px;
+  }
+
+  .linkers {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+  }
+
   .section-2 {
-    background-image: url(Microverse-Student-Project-1/big-img2.png);
+    background: url(Microverse-Student-Project-1/header.png) no-repeat;
+    background-size: 99%;
+    background-position-x: right;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
-    max-height: 100vh;
+    height: 1000px;
     width: 100%;
+    border-bottom-left-radius: 10%;
     margin-bottom: 0;
   }
 
   .paragraph {
     margin-top: 100px;
-    margin-left: 390px;
+    margin-left: 300px;
     margin-right: 390px;
     text-align: left;
   }
@@ -651,7 +670,7 @@ ul {
     margin-bottom: 30px;
     gap: 142px;
     padding: 142px;
-    width: 1440px;
+    width: 1220px;
     height: 2694px;
   }
 
@@ -701,7 +720,15 @@ ul {
 
   /* about my self section */
 
+  .desk-continer {
+    width: 1500px;
+    height: 942px;
+    background-color: #fff;
+    border-top-right-radius: 80px;
+  }
+
   .about-my-self {
+    display: none;
     width: 1500px;
     height: 942px;
     position: absolute;
@@ -712,7 +739,7 @@ ul {
     position: absolute;
     width: 884px;
     right: 200px;
-    top: 4200px;
+    top: 4180px;
   }
 
   .items-list {
@@ -738,7 +765,7 @@ ul {
 
   .top {
     position: absolute;
-    left: 200px;
+    left: 150px;
     top: 4270px;
     width: 500px;
   }
@@ -749,20 +776,38 @@ ul {
 
   .second-text {
     margin-top: 0;
-    width: 450px;
+    width: 710px;
+  }
+
+  .second-text1 {
+    width: 475px;
+  }
+
+  .h-line {
+    position: absolute;
+    width: 65%;
+    left: 220px;
+    right: 0;
+    top: 400px;
+    height: 1px;
+    color: #dfe1e6;
+  }
+
+  .h-line1 {
+    top: 330px;
   }
 
   /* contact me section */
-
   .contact-me-img {
     background: url(Microverse-Student-Project-1/fimg.png)  #6070ff no-repeat;
     background-size: 99%;
     background-position-y: center;
     position: absolute;
-    width: 100%;
+    width: 1500px;
     height: 920px;
-    top: 4900px;
+    top: 4930px;
     margin-top: 20px;
+    border-top-left-radius: 10%;
   }
 
   .contactme-img {
