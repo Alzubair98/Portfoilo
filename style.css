@@ -615,6 +615,10 @@ ul {
 /* Desktop-version */
 
 @media (min-width: 768px) {
+/* body{
+  width: 1200px;
+} */
+
   .button1 {
     display: none;
   }
@@ -738,8 +742,9 @@ ul {
 
   .skill {
     position: absolute;
-    width: 884px;
-    right: 200px;
+    width: 600px;
+    right: 90px;
+    left: 600px;
     top: 4180px;
   }
 
@@ -786,8 +791,8 @@ ul {
 
   .h-line {
     position: absolute;
-    width: 65%;
-    left: 220px;
+    width: 70%;
+    left: 80px;
     right: 0;
     top: 400px;
     height: 1px;
