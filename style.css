@@ -764,12 +764,10 @@ ul {
   }
 
   .skill {
-    position: absolute;
+    position: relative;
     width: 50%;
-
-    /* right: 90px; */
     left: 50%;
-    top: 530%;
+    top: -30%;
   }
 
   .items-list {
@@ -796,9 +794,9 @@ ul {
   }
 
   .top {
-    position: absolute;
+    position: relative;
     left: 10%;
-    top: 540%;
+    top: 20%;
     width: 40%;
   }
 
@@ -846,6 +844,8 @@ ul {
     position: relative;
     margin: 0%;
     padding: 0%;
+    z-index: -1;
+    background-color: white;
   }
 
   .contact-me-img {
