@@ -659,7 +659,7 @@ ul {
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    height: 1000px;
+    height: 100%;
     width: 100%;
     border-bottom-left-radius: 70px;
     margin-bottom: 0;
