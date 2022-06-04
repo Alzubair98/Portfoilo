@@ -948,5 +948,22 @@ ul {
     color: black;
   }
 
+  .navbar{
+    animation: duration 3s;
+    animation-name: example;
+    animation-iteration-count: 1;
+  }
+  @keyframes example {
+    form{
+      margin-left: 100%;
+    }
+
+    to {
+      margin-left: 0%;
+    }
+    
+  }
+
+}
 
 }
