@@ -26,6 +26,10 @@ body {
   margin: 3% 0% 0% 3%;
 }
 
+.orders {
+  display: none;
+}
+
 .button {
   margin: 5%;
 }
@@ -606,4 +610,309 @@ ul {
   top: 350px;
   position: absolute;
   left: 0;
+}
+
+/* Desktop-version */
+
+@media (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+
+  footer {
+    margin: 0;
+  }
+
+  .button1 {
+    display: none;
+  }
+
+  .first-img {
+    display: none;
+  }
+
+  .orders {
+    display: flex;
+    gap: 15px;
+    color: #344563;
+    text-decoration: none;
+    margin-top: 2%;
+    margin-right: 7%;
+  }
+
+  .container {
+    position: relative;
+    width: 100%;
+  }
+
+  .linkers {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    margin-right: 3%;
+  }
+
+  .section-2 {
+    background: url(Microverse-Student-Project-1/header.png) no-repeat;
+    background-size: 99%;
+    background-position-x: right;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    border-bottom-left-radius: 70px;
+    margin-bottom: 0;
+  }
+
+  .paragraph {
+    margin-top: 100px;
+    margin-left: 20%;
+    margin-right: 390px;
+    text-align: left;
+    width: 50%;
+  }
+
+  .section-3 {
+    display: grid;
+    vertical-align: bottom;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    /* margin-left: 10px; */
+    margin-right: 10px;
+
+    /* gap: 1%; */
+
+    /* padding: 142px; */
+    width: 100%;
+    height: 2694px;
+    position: relative;
+
+    /* left: 30px; */
+  }
+
+  .card {
+    width: 70%;
+    height: 496px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 24px;
+    gap: 50px;
+    position: relative;
+    left: 12%;
+    margin: 10% 15% 0 3%;
+  }
+
+  .photo {
+    width: 45%;
+    border-radius: 8px;
+    margin-right: 3px;
+  }
+
+  .work-img {
+    width: 100%;
+    height: 448px;
+  }
+
+  .left-block {
+    position: absolute;
+    right: 5%;
+    top: 30px;
+    gap: 8px;
+    width: 45%;
+    margin-left: 3px;
+  }
+
+  .work-img1 {
+    width: 45%;
+    height: 448px;
+    border-radius: 8px;
+    position: absolute;
+    right: 2%;
+    top: 30px;
+  }
+
+  .left-block1 {
+    position: absolute;
+    left: 2%;
+    top: 30px;
+  }
+
+  .des-text {
+    width: 100%;
+    height: 30%;
+    margin-top: 40px;
+  }
+
+  /* about my self section */
+
+  .desk-continer {
+    width: 100%;
+    height: 942px;
+    background-color: #fff;
+    border-top-right-radius: 80px;
+    border-top-right-radius: 10%;
+  }
+
+  .about-my-self {
+    display: none;
+    width: 1500px;
+    height: 942px;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .skill {
+    position: relative;
+    width: 50%;
+    left: 50%;
+    top: -30%;
+  }
+
+  .items-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .frame9 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin: 0 3% 0 3%;
+  }
+
+  .javaS {
+    position: absolute;
+    height: 24px;
+    left: 10px;
+    right: 12px;
+    top: 60px;
+  }
+
+  .top {
+    position: relative;
+    left: 10%;
+    top: 20%;
+    width: 40%;
+  }
+
+  .first-text {
+    margin-bottom: 10px;
+  }
+
+  .second-text {
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .second-text1 {
+    width: 90%;
+  }
+
+  .h-line {
+    position: absolute;
+    width: 70%;
+    right: 3%;
+    top: 77%;
+    height: 1px;
+    color: #dfe1e6;
+  }
+
+  .h-line1 {
+    top: 63%;
+
+    /* left: 0%; */
+    right: 3%;
+    width: 70%;
+  }
+
+  .language-list {
+    padding: 0;
+    position: relative;
+    left: -10%;
+  }
+
+  /* contact me section */
+
+  .final-section {
+    width: 100%;
+    height: 920px;
+    position: relative;
+    margin: 0%;
+    padding: 0%;
+    z-index: -1;
+    background-color: white;
+  }
+
+  .contact-me-img {
+    background: url(Microverse-Student-Project-1/fimg.png)  #6070ff no-repeat;
+    background-size: 99%;
+    background-position-y: center;
+    position: absolute;
+    width: 100%;
+    height: 920px;
+    top: 0%;
+    margin-top: 0%;
+    border-top-left-radius: 10%;
+  }
+
+  .contactme-img {
+    display: none;
+  }
+
+  .contact-text {
+    position: absolute;
+    width: 50%;
+    top: 10%;
+    left: 20%;
+    text-align: center;
+  }
+
+  .Contactme {
+    width: 100%;
+  }
+
+  .contactmepara {
+    display: flex;
+    width: 35%;
+    height: 102px;
+    position: absolute;
+    top: 24%;
+    left: 30%;
+    text-align: center;
+  }
+
+  .contact-information {
+    width: 40%;
+    left: 31%;
+    position: absolute;
+    top: 42%;
+    margin-top: 3%;
+  }
+
+  .name-input {
+    border-radius: 0;
+  }
+
+  .text-box {
+    border-radius: 0;
+  }
+
+  .contact-btn {
+    display: flex;
+    position: absolute;
+    left: 40%;
+  }
+
+  .contact-shapes {
+    display: none;
+  }
+
+  .primary-text {
+    width: 100%;
+  }
 }
