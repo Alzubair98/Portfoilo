@@ -915,4 +915,38 @@ ul {
   .primary-text {
     width: 100%;
   }
+  .connect-button{
+    transition: color 3s, font-size 4s;
+  }
+
+  .connect-button:hover{
+    color: red;
+    font-size: 30px;
+  }
+
+  .emoji{
+    transition: color 3s;
+  }
+
+  .emoji:hover{
+    color: #0e76a8;
+  }
+
+  .mail{
+    transition: color 3s;
+  }
+
+  .mail:hover{
+    color: red;
+  }
+
+  .git{
+    transition: color 3s;
+  }
+
+  .git:hover{
+    color: black;
+  }
+
+
 }
