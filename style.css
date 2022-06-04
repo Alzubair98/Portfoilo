@@ -915,55 +915,53 @@ ul {
   .primary-text {
     width: 100%;
   }
-  .connect-button{
+
+  .connect-button {
     transition: color 3s, font-size 4s;
   }
 
-  .connect-button:hover{
+  .connect-button:hover {
     color: red;
     font-size: 30px;
   }
 
-  .emoji{
+  .emoji {
     transition: color 3s;
   }
 
-  .emoji:hover{
+  .emoji:hover {
     color: #0e76a8;
   }
 
-  .mail{
+  .mail {
     transition: color 3s;
   }
 
-  .mail:hover{
+  .mail:hover {
     color: red;
   }
 
-  .git{
+  .git {
     transition: color 3s;
   }
 
-  .git:hover{
+  .git:hover {
     color: black;
   }
 
-  .navbar{
+  .navbar {
     animation: duration 3s;
     animation-name: example;
     animation-iteration-count: 1;
   }
+
   @keyframes example {
-    form{
+    form {
       margin-left: 100%;
     }
 
     to {
       margin-left: 0%;
     }
-    
   }
-
-}
-
 }
