@@ -27,8 +27,36 @@ body {
 }
 
 .orders {
+  flex-direction: column;
+  width: 50%;
+  text-align: center;
+  transition: 0.3s;
   display: none;
 }
+.orders.active {
+  display: flex;
+}
+
+.button1.active{
+  display: none;
+}
+
+.x-button {
+  display: none;
+}
+
+.x-button.active {
+  display: flex;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #344563;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+
 
 .button {
   margin: 5%;
@@ -650,12 +678,21 @@ ul {
     width: 100%;
   }
 
-  .linkers {
+  .nav-link {
+    text-decoration: none;
+    color: #344563;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  
+
+  /* .linkers {
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     margin-right: 3%;
-  }
+  } */
 
   .section-2 {
     background: url(Microverse-Student-Project-1/header.png) no-repeat;
