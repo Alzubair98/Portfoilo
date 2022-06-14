@@ -19,15 +19,20 @@
   </head>
 
   <body>
+    <div class="orders-cont">
+      <button class="x-button"><i class="fa-solid fa-xmark"></i></button>
+      <ul class="orders">
+        <li class="linkers"><a class="nav-link" href="#cards"> Portoflio</a></li> 
+        <li class="linkers"><a class="nav-link" href="#desk">About</a></li>
+        <li class="linkers"><a class="nav-link" href="#the-final">Contact</a></li>
+      </ul>
+    </div>
     <div class="header">
       <header class="container">
         <a class="navbar" href="">My Logo</a>
-        <nav class="button button1"><i class="fa-solid fa-bars"></i></nav>
-        <ul class="orders">
-          <li class="linkers">Portoflio</li> 
-          <li class="linkers">About</li>
-          <li class="linkers">Contact</li>
-        </ul>
+        
+        <nav class="button button1"><i class="hamberger-button-1 fa-solid fa-bars"></i></nav>
+        
       </header>
     </div>
 
@@ -69,7 +74,8 @@
     </div>
 
     <section class="section-3">
-      <div class="card">
+      <!-- here -->
+      <div class="card" id="cards">
         <div class="photo">
           <img
             class="work-img"
@@ -237,7 +243,8 @@
           alt="background-img"
         />
       </div>
-    <div class="desk-continer">
+      <!-- here -->
+    <div class="desk-continer" id="desk">
       <div class="top">
         <h2 class="first-text">About <br /><span>Myself</span></h2>
         <p class="second-text second-text1">
@@ -334,18 +341,11 @@
       </div>
     </div>
       <footer>
-        <div class="final-section">
+        <!-- here -->
+        <div class="final-section" id="the-final"> 
           <div class="contact-me-img">
-            <img
-              class="contactme-img"
-              src="Microverse-Student-Project-1/Contact.png"
-              alt="background-img"
-            />
-            <img
-              class="contact-shapes"
-              src="Microverse-Student-Project-1/Contact2.png"
-              alt="background-img"
-            />
+            <img class="contactme-img"  src="Microverse-Student-Project-1/Contact.png"   alt="background-img"/>
+            <img class="contact-shapes"  src="Microverse-Student-Project-1/Contact2.png" alt="background-img"/>
           </div>
           <div class="contact-text">
             <h1 class="Contactme">Contact Me</h1>
@@ -359,19 +359,13 @@
           </div>
 
           <form action="https://formspree.io/f/contact-information" method="post" class="contact-information" id="contact-information" >
-            <input class="name-input" type="text" name="username" placeholder="alzubair" maxlength="30" required>
-            <input
-              class="name-input"
-              type="email"
-              name="usermail"
-              placeholder="youremail@gmail.com"
-              required>
-            
-            <textarea class="text-box"  cols="30" rows="10" maxlength="500" placeholder="alzubair" required ></textarea>
-              <button type="submit" class="normal contact-btn">Get in touch</button>
+            <input class="name-input" type="text" name="username" placeholder="alzubair" maxlength="30" required/>
+            <input class="name-input" type="email" name="usermail" placeholder="youremail@gmail.com" required/>
+            <textarea class="text-box"  cols="30" rows="10" maxlength="500" placeholder="alzubair" required></textarea>
+            <button type="submit" class="normal contact-btn">Get in touch</button>
           </form>
         </div>
       </footer>
-    
+    <script src="index.js"></script>
   </body>
 </html>

@@ -26,8 +26,56 @@ body {
   margin: 3% 0% 0% 3%;
 }
 
-.orders {
+.orders-cont {
+  height: 100%;
+  width: 100%;
+  background-color: #6070ff;
+  position: fixed;
+
+  /* to make the element behinde it visible */
+  mix-blend-mode: multiply;
   display: none;
+  z-index: 1;
+}
+
+.orders {
+  flex-direction: column;
+  width: 50%;
+  text-align: left;
+  transition: 0.3s;
+  display: flex;
+  margin-left: 10%;
+  gap: 15px;
+}
+
+.orders-cont.active {
+  display: flex;
+  flex-direction: column;
+}
+
+.button1.active {
+  display: none;
+}
+
+.fa-xmark {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.x-button {
+  display: flex;
+  margin-left: 85%;
+  margin-top: 10%;
+  border: none;
+  background-color: #6070ff;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
 }
 
 .button {
@@ -42,18 +90,27 @@ body {
   margin: 0%;
 }
 
-.fa-solid {
+.header.active {
+  filter: blur(8px);
+  z-index: -1;
+}
+
+.hamberger-button-1 {
   color: #6070ff;
   font-size: 2rem;
   margin: 5%;
 }
 
 /* section 2 */
-
 .section-2 {
   display: flex;
   flex-direction: column;
   max-height: 100vh;
+}
+
+.section-2.active {
+  filter: blur(8px);
+  z-index: -1;
 }
 
 .paragraph {
@@ -62,7 +119,6 @@ body {
 }
 
 /* text  */
-
 .first-text {
   width: 327px;
   color: #172b4d;
@@ -120,6 +176,11 @@ ul {
   display: grid;
   vertical-align: bottom;
   margin-top: 30px;
+}
+
+.section-3.active {
+  filter: blur(8px);
+  z-index: -1;
 }
 
 .card {
@@ -222,7 +283,7 @@ ul {
 .back-end {
   width: 88px;
   height: 16px;
-  font-style: 600;
+  font-weight: 600;
   font-size: 13px;
   line-height: 16px;
   color: #677283;
@@ -236,7 +297,7 @@ ul {
 .des-text {
   width: 350px;
   height: 76px;
-  font: normal;
+  font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
@@ -329,6 +390,10 @@ ul {
 
 /* section 6 */
 
+.desk-continer.active {
+  filter: blur(8px);
+}
+
 .img-holder {
   position: relative;
   padding-top: 114px;
@@ -352,7 +417,7 @@ ul {
 }
 
 .self-text {
-  width: 330;
+  width: 330px;
   height: 101px;
   font-style: normal;
   font-weight: 700;
@@ -364,7 +429,7 @@ ul {
 }
 
 .intro-text {
-  width: 330;
+  width: 330px;
   height: 144px;
   font-style: normal;
   font-weight: 400;
@@ -514,6 +579,12 @@ ul {
 
 /* contact-me */
 
+.final-section.active {
+  filter: blur(8px);
+  position: absolute;
+  top: 0;
+}
+
 .contact-me-img {
   position: absolute;
   width: 480px;
@@ -521,6 +592,10 @@ ul {
   z-index: -1;
   top: 5200px;
   margin-top: 30px;
+}
+
+.contactme-img {
+  width: 485px;
 }
 
 .contact-shapes {
@@ -540,7 +615,7 @@ ul {
 
 .Contactme {
   position: absolute;
-  width: 801px;
+  width: 300px;
   height: 56px;
   font-style: normal;
   font-weight: 900;
@@ -582,7 +657,6 @@ ul {
 }
 
 .name-input {
-  position: abosulte;
   height: 38px;
   width: 400px;
   border: 1px solid #cfd8dc;
@@ -650,12 +724,20 @@ ul {
     width: 100%;
   }
 
-  .linkers {
+  .nav-link {
+    text-decoration: none;
+    color: #344563;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  /* .linkers {
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     margin-right: 3%;
-  }
+  } */
 
   .section-2 {
     background: url(Microverse-Student-Project-1/header.png) no-repeat;
