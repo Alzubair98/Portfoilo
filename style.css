@@ -90,7 +90,7 @@ body {
   margin: 0%;
 }
 
-.header.active{
+.header.active {
   filter: blur(8px);
   z-index: -1;
 }
@@ -119,7 +119,6 @@ body {
 }
 
 /* text  */
-
 .first-text {
   width: 327px;
   color: #172b4d;
@@ -179,7 +178,7 @@ ul {
   margin-top: 30px;
 }
 
-.section-3.active{
+.section-3.active {
   filter: blur(8px);
   z-index: -1;
 }
@@ -391,10 +390,9 @@ ul {
 
 /* section 6 */
 
-.desk-continer.active{
+.desk-continer.active {
   filter: blur(8px);
 }
-
 
 .img-holder {
   position: relative;
@@ -581,7 +579,7 @@ ul {
 
 /* contact-me */
 
-footer.active{
+footer.active {
   filter: blur(8px);
 }
 
@@ -594,7 +592,7 @@ footer.active{
   margin-top: 30px;
 }
 
-.contactme-img{
+.contactme-img {
   width: 485px;
 }
 
