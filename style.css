@@ -90,6 +90,11 @@ body {
   margin: 0%;
 }
 
+.header.active{
+  filter: blur(8px);
+  z-index: -1;
+}
+
 .hamberger-button-1 {
   color: #6070ff;
   font-size: 2rem;
@@ -172,6 +177,11 @@ ul {
   display: grid;
   vertical-align: bottom;
   margin-top: 30px;
+}
+
+.section-3.active{
+  filter: blur(8px);
+  z-index: -1;
 }
 
 .card {
@@ -381,6 +391,11 @@ ul {
 
 /* section 6 */
 
+.desk-continer.active{
+  filter: blur(8px);
+}
+
+
 .img-holder {
   position: relative;
   padding-top: 114px;
@@ -566,6 +581,10 @@ ul {
 
 /* contact-me */
 
+footer.active{
+  filter: blur(8px);
+}
+
 .contact-me-img {
   position: absolute;
   width: 480px;
@@ -573,6 +592,10 @@ ul {
   z-index: -1;
   top: 5200px;
   margin-top: 30px;
+}
+
+.contactme-img{
+  width: 485px;
 }
 
 .contact-shapes {
@@ -592,7 +615,7 @@ ul {
 
 .Contactme {
   position: absolute;
-  width: 801px;
+  width: 300px;
   height: 56px;
   font-style: normal;
   font-weight: 900;
