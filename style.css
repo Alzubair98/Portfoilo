@@ -26,13 +26,14 @@ body {
   margin: 3% 0% 0% 3%;
 }
 
-.orders-cont{
+.orders-cont {
   height: 100%;
   width: 100%;
-  background-color: #6070FF;
+  background-color: #6070ff;
   position: fixed;
+
   /* to make the element behinde it visible */
-  mix-blend-mode: multiply; 
+  mix-blend-mode: multiply;
   display: none;
   z-index: 1;
 }
@@ -52,11 +53,11 @@ body {
   flex-direction: column;
 }
 
-.button1.active{
+.button1.active {
   display: none;
 }
 
-.fa-xmark{
+.fa-xmark {
   color: #fff;
   font-size: 2rem;
 }
@@ -66,7 +67,7 @@ body {
   margin-left: 85%;
   margin-top: 10%;
   border: none;
-  background-color: #6070FF;
+  background-color: #6070ff;
 }
 
 .nav-link {
@@ -96,18 +97,16 @@ body {
 }
 
 /* section 2 */
-
 .section-2 {
   display: flex;
   flex-direction: column;
   max-height: 100vh;
 }
 
-.section-2.active{
+.section-2.active {
   filter: blur(8px);
   z-index: -1;
 }
-
 
 .paragraph {
   margin: 30% auto;
@@ -275,7 +274,7 @@ ul {
 .back-end {
   width: 88px;
   height: 16px;
-  font-style: 600;
+  font-weight: 600;
   font-size: 13px;
   line-height: 16px;
   color: #677283;
@@ -289,7 +288,7 @@ ul {
 .des-text {
   width: 350px;
   height: 76px;
-  font: normal;
+  font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
@@ -405,7 +404,7 @@ ul {
 }
 
 .self-text {
-  width: 330;
+  width: 330px;
   height: 101px;
   font-style: normal;
   font-weight: 700;
@@ -417,7 +416,7 @@ ul {
 }
 
 .intro-text {
-  width: 330;
+  width: 330px;
   height: 144px;
   font-style: normal;
   font-weight: 400;
@@ -635,7 +634,6 @@ ul {
 }
 
 .name-input {
-  position: abosulte;
   height: 38px;
   width: 400px;
   border: 1px solid #cfd8dc;
@@ -710,7 +708,6 @@ ul {
     font-size: 15px;
     line-height: 20px;
   }
-  
 
   /* .linkers {
     font-family: "Poppins", sans-serif;
