@@ -34,6 +34,7 @@ body {
   /* to make the element behinde it visible */
   mix-blend-mode: multiply; 
   display: none;
+  z-index: 1;
 }
 
 .orders {
@@ -101,6 +102,12 @@ body {
   flex-direction: column;
   max-height: 100vh;
 }
+
+.section-2.active{
+  filter: blur(8px);
+  z-index: -1;
+}
+
 
 .paragraph {
   margin: 30% auto;
