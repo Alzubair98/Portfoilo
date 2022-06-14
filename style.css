@@ -26,37 +26,55 @@ body {
   margin: 3% 0% 0% 3%;
 }
 
+.orders-cont{
+  height: 100%;
+  width: 100%;
+  background-color: #6070FF;
+  position: fixed;
+  /* to make the element behinde it visible */
+  mix-blend-mode: multiply; 
+  display: none;
+}
+
 .orders {
   flex-direction: column;
   width: 50%;
-  text-align: center;
+  text-align: left;
   transition: 0.3s;
-  display: none;
-}
-.orders.active {
   display: flex;
+  margin-left: 10%;
+  gap: 15px;
+}
+
+.orders-cont.active {
+  display: flex;
+  flex-direction: column;
 }
 
 .button1.active{
   display: none;
 }
 
-.x-button {
-  display: none;
+.fa-xmark{
+  color: #fff;
+  font-size: 2rem;
 }
 
-.x-button.active {
+.x-button {
   display: flex;
+  margin-left: 85%;
+  margin-top: 10%;
+  border: none;
+  background-color: #6070FF;
 }
 
 .nav-link {
   text-decoration: none;
-  color: #344563;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
 }
-
 
 .button {
   margin: 5%;
@@ -70,7 +88,7 @@ body {
   margin: 0%;
 }
 
-.fa-solid {
+.hamberger-button-1 {
   color: #6070ff;
   font-size: 2rem;
   margin: 5%;
