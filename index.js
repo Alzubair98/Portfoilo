@@ -6,7 +6,7 @@ const section = document.querySelector('.section-2');
 const continer = document.querySelector('.header');
 const section3 = document.querySelector('.section-3');
 const section4 = document.querySelector('.desk-continer');
-const section5 = document.querySelector('footer');
+const section5 = document.querySelector('.final-section');
 
 let i = 0;
 hamburger.addEventListener('click', () => {

@@ -579,8 +579,10 @@ ul {
 
 /* contact-me */
 
-footer.active {
+.final-section.active {
   filter: blur(8px);
+  position: absolute;
+  top: 0;
 }
 
 .contact-me-img {
