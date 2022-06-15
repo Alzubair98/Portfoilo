@@ -1188,4 +1188,50 @@ ul {
       margin-left: 0%;
     }
   }
+
+  /* full-card-section */
+
+  .card-text-cont{
+    width: 95%;
+  }
+
+  .card-xbutton{
+    margin-top: 4%;
+    margin-right: 1%;
+    width: auto;
+  }
+
+  .card-img-continer{
+    width: 95%;
+  }
+
+  .second-part{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .full-card-hr{
+    left: 55%;
+    top: 76%;
+    position: absolute;
+    width: 44%;
+  }
+
+  .full-card-tags{
+    position: absolute;
+    left: 55%;
+  }
+
+  .full-card-buttons{
+    margin-top: 5%;
+  }
+
+  .second-part-text{
+    height: 300px;
+    line-height: 40px;
+  }
+
+
+
+
 }
