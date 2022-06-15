@@ -690,9 +690,9 @@ ul {
 
 .full-card-cont {
   width: 80%;
-  background-color: red;
   position: absolute;
   margin-left: 10%;
+  /* display: none; */
 }
 
 .full-card {

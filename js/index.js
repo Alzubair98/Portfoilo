@@ -8,6 +8,7 @@ const section3 = document.querySelector('.section-3');
 const section4 = document.querySelector('.desk-continer');
 const section5 = document.querySelector('.final-section');
 
+
 let i = 0;
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
@@ -33,10 +34,11 @@ for (i = 0; i < link.length; i += 1) {
   link[i].addEventListener('click', () => {
     hamburger.classList.toggle('active');
     navMenu.classList.toggle('active');
-    section.classList.toggle('active');
-    continer.classList.toggle('active');
-    section3.classList.toggle('active');
-    section4.classList.toggle('active');
-    section5.classList.toggle('active');
+    section.classList.remove('active');
+    continer.classList.remove('active');
+    section3.classList.remove('active');
+    section4.classList.remove('active');
+    section5.classList.remove('active');
   });
 }
+
