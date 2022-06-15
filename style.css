@@ -789,11 +789,19 @@ ul {
   height: 15px;
 }
 
+.hr-full-card{
+  width: 100%;
+}
+
 .full-card-hr {
   background-color: #ebecf0;
   width: 100%;
   height: 1px;
   border-style: none;
+}
+
+.full-card-second-div{
+  width: 100%;
 }
 
 .full-card-buttons {
@@ -803,6 +811,7 @@ ul {
   width: 90%;
   gap: 15px;
   margin-left: 4%;
+  margin-bottom: 20px;
 }
 
 .full-card-button {
@@ -1210,28 +1219,19 @@ ul {
     flex-direction: row;
   }
 
-  .full-card-hr{
-    left: 55%;
-    top: 76%;
-    position: absolute;
-    width: 44%;
+
+  .full-card-first-div{
+    width: 60%;
   }
 
-  .full-card-tags{
-    position: absolute;
-    left: 55%;
-  }
-
-  .full-card-buttons{
-    margin-top: 5%;
+  .full-card-second-div{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
   }
 
   .second-part-text{
     height: 300px;
     line-height: 40px;
   }
-
-
-
-
 }
