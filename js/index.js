@@ -43,16 +43,53 @@ for (i = 0; i < link.length; i += 1) {
 }
 
 
+// cards-objects
 
-
-
+const allCards = [
+  {
+    name: 'Tonic',
+    description: `A daily selection of privately personalized reads; no
+      accounts or sign-ups required.`,
+    image: 'Microverse-Student-Project-1/img2.png',
+    technologies: ['html', 'CSS', 'JabaScript'],
+    live: 'https://alzubair98.github.io/code-review/',
+    source: 'https://github.com/Alzubair98/code-review.git',
+  },
+  {
+    name: 'Multi-Post Stories',
+    description: `A daily selection of privately personalized reads; no
+      accounts or sign-ups required.`,
+    image: 'Microverse-Student-Project-1/img3.png',
+    technologies: ['html', 'CSS', 'JabaScript'],
+    live: 'https://alzubair98.github.io/code-review/',
+    source: 'https://github.com/Alzubair98/code-review.git',
+  },
+  {
+    name: 'Tonic',
+    description: `A daily selection of privately personalized reads; no
+      accounts or sign-ups required.`,
+    image: 'Microverse-Student-Project-1/img4.png',
+    technologies: ['html', 'CSS', 'JabaScript'],
+    live: 'https://alzubair98.github.io/code-review/',
+    source: 'https://github.com/Alzubair98/code-review.git',
+  },
+  {
+    name: 'Profesional Art Printing Data',
+    description: `A daily selection of privately personalized reads; no
+      accounts or sign-ups required. has been the industry's
+      standard`,
+    image: 'Microverse-Student-Project-1/img5.png',
+    technologies: ['html', 'CSS', 'JabaScript'],
+    live: 'https://alzubair98.github.io/code-review/',
+    source: 'https://github.com/Alzubair98/code-review.git',
+  },
+]
 
 
 // cards-section
 
-const cardsSection = `
-<section class="section-3">
-      
+const firstCard = `
+
       <div class="card" id="cards">
         <div class="photo">
           <img
@@ -91,8 +128,9 @@ const cardsSection = `
             <button class="normal" type="button">See Project</button>
           </div>
         </div>
-      </div>
+      </div>`
 
+const secondCard = `
       <div class="card">
         <div class="photo">
           <img
@@ -131,8 +169,8 @@ const cardsSection = `
             <button class="normal" type="button">See Project</button>
           </div>
         </div>
-      </div>
-
+      </div>`
+const thirdCard=`
       <div class="card">
         <div class="photo">
           <img
@@ -171,8 +209,8 @@ const cardsSection = `
             <button class="normal" type="button">See Project</button>
           </div>
         </div>
-      </div>
-
+      </div>`
+const forthCard = `
       <div class="card">
         <div class="photo">
           <img
@@ -212,11 +250,47 @@ const cardsSection = `
           </div>
         </div>
       </div>
-    </section>
+`
+const popUpCard = `
+<div class="full-card-cont">
+<div class="full-card">
+  <div class="card-text-cont">
+    <h2 class="card-title">Tonic</h2>
+    <button class="card-xbutton"><i class="full-card-xmark fa-solid fa-xmark"></i></button>
+  </div>
+  <div class="card-CANOPY">
+    <h3 class="CANOPY-text-card CANPOY">CANOPY</h3>
+    <i class="counter fa-solid fa-circle"></i>
+    <h3 class="back-end ">Back End Dev</h3>
+    <i class="counter fa-solid fa-circle"></i>
+    <h3 class="back-end">2022</h3>
+  </div>
+  <div class="card-img-continer">
+    <img class="full-card-img" src="Microverse-Student-Project-1/img2.png" alt="">
+  </div>
+  <div class="second-part">
+    <div class="full-card-first-div">
+      <h3 class="second-part-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent</h3>        
+    </div>
+    <div class="full-card-second-div">
+      <ul class="tags full-card-tags">
+        <li class="tag full-card-tag"><a class="html" href="">html</a></li>
+        <li class="tag full-card-tag"><a class="html" href="">CSS</a></li>
+        <li class="tagj full-card-tag"><a class="html" href="">JavaScript</a></li>
+      </ul>
+      <div class="hr-full-card">
+        <hr class="full-card-hr">
+      </div>
+      <div class="full-card-buttons">
+        <button class="full-card-button normal">See Live <i class="fa-solid fa-eye"></i></button>
+        <button class="full-card-button normal">See Source <i class="fa-brands fa-github-alt"></i> </button>
+      </div>
+    </div>          
+  </div>     
+</div>
+</div>
 `
 
-const divi = document.createElement("div");
 
-divi.innerHTML = cardsSection
+document.getElementById("section3").innerHTML = firstCard + secondCard + thirdCard + forthCard 
 
-document.getElementById("section2").after(divi)
