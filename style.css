@@ -31,6 +31,7 @@ body {
   width: 100%;
   background-color: #6070ff;
   position: fixed;
+
   /* to make the element behinde it visible */
   mix-blend-mode: multiply;
   display: none;
@@ -685,6 +686,129 @@ ul {
   left: 0;
 }
 
+/* full card  */
+
+.full-card-cont {
+  width: 80%;
+  background-color: red;
+  position: absolute;
+  margin-left: 10%;
+}
+
+.full-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* padding: 16px; */
+  gap: 12px;
+  border-radius: 16px;
+  background-color: #fff;
+  border: 1px solid #dfe1e6;
+}
+
+.card-text-cont {
+  height: 60px;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+  gap: 12px;
+}
+
+.card-title {
+  width: 50%;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.card-xbutton {
+  margin-top: 8%;
+  height: 10%;
+  width: 20%;
+  background-color: #fff;
+  border: none;
+}
+
+.full-card-xmark {
+  color: #67798e;
+  font-size: 1.5rem;
+}
+
+.card-CANOPY {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0%;
+  gap: 12px;
+  width: 90%;
+}
+
+.CANOPY-text-card {
+  color: #344563;
+}
+
+.card-img-continer {
+  width: 90%;
+}
+
+.full-card-img {
+  width: 100%;
+}
+
+.second-part {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  padding: 0% 16px 0% 16px;
+}
+
+.second-part-text {
+  color: #344563;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  margin-top: 0%;
+  width: 98%;
+  text-align: left;
+}
+
+.full-card-tags {
+  margin-top: 0;
+  order: 0;
+}
+
+.full-card-tag {
+  height: 15px;
+}
+
+.full-card-hr {
+  background-color: #ebecf0;
+  width: 100%;
+  height: 1px;
+  border-style: none;
+}
+
+.full-card-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  gap: 15px;
+  margin-left: 4%;
+}
+
+.full-card-button {
+  width: 60%;
+}
+
 /* Desktop-version */
 
 @media (min-width: 768px) {
@@ -692,7 +816,7 @@ ul {
     margin: 0;
   }
 
-  footer {
+  .final-section {
     width: 100%;
     height: 920px;
     position: relative;
@@ -700,6 +824,14 @@ ul {
     padding: 0%;
     z-index: 0;
   }
+
+  /* .final-section {
+    background-color: white;
+    width: 100%;
+    height: 920px;
+    position: absolute;
+    z-index: -2;
+  } */
 
   .button1 {
     display: none;
@@ -709,15 +841,16 @@ ul {
     display: none;
   }
 
-  .orders-cont{
+  .orders-cont {
     height: 10%;
     width: 100%;
     display: flex;
     flex-direction: row;
     background-color: #fff;
+    position: absolute;
   }
 
-  .x-button{
+  .x-button {
     display: none;
   }
 
@@ -937,14 +1070,6 @@ ul {
   }
 
   /* contact me section */
-
-  .final-section {
-    background-color: white;
-    width: 100%;
-    height: 920px;
-    position: absolute;
-    z-index: -2;
-  }
 
   .contact-me-img {
     background: url(Microverse-Student-Project-1/fimg.png)  #6070ff no-repeat;
