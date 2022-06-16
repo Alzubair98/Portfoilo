@@ -7,6 +7,8 @@ const continer = document.querySelector('.header');
 const section3 = document.querySelector('.section-3');
 const section4 = document.querySelector('.desk-continer');
 const section5 = document.querySelector('.final-section');
+const list = document.querySelectorAll(".apper");
+const popCard = document.querySelector(".full-card-cont");
 
 
 let i = 0;
@@ -39,8 +41,18 @@ for (i = 0; i < link.length; i += 1) {
     section3.classList.remove('active');
     section4.classList.remove('active');
     section5.classList.remove('active');
+    
   });
 }
+
+for (let j = 0; j < list.length; j++){
+  list[j].addEventListener("click", function () {
+    popCard.classList.toggle("active");
+  })
+}
+
+
+
 
 
 // cards-objects
@@ -125,7 +137,7 @@ const firstCard = `
           </ul>
 
           <div class="action">
-            <button class="normal" type="button">See Project</button>
+            <button class="normal apper" type="button">See Project</button>
           </div>
         </div>
       </div>`
@@ -166,7 +178,7 @@ const secondCard = `
           </ul>
 
           <div class="action">
-            <button class="normal" type="button">See Project</button>
+            <button class="normal apper" type="button">See Project</button>
           </div>
         </div>
       </div>`
@@ -206,7 +218,7 @@ const thirdCard=`
           </ul>
 
           <div class="action">
-            <button class="normal" type="button">See Project</button>
+            <button class="normal apper" type="button">See Project</button>
           </div>
         </div>
       </div>`
@@ -246,51 +258,58 @@ const forthCard = `
           </ul>
 
           <div class="action">
-            <button class="normal" type="button">See Project</button>
+            <button class="normal apper" type="button">See Project</button>
           </div>
         </div>
       </div>
 `
 const popUpCard = `
 <div class="full-card-cont">
-<div class="full-card">
-  <div class="card-text-cont">
-    <h2 class="card-title">Tonic</h2>
-    <button class="card-xbutton"><i class="full-card-xmark fa-solid fa-xmark"></i></button>
-  </div>
-  <div class="card-CANOPY">
-    <h3 class="CANOPY-text-card CANPOY">CANOPY</h3>
-    <i class="counter fa-solid fa-circle"></i>
-    <h3 class="back-end ">Back End Dev</h3>
-    <i class="counter fa-solid fa-circle"></i>
-    <h3 class="back-end">2022</h3>
-  </div>
-  <div class="card-img-continer">
-    <img class="full-card-img" src="Microverse-Student-Project-1/img2.png" alt="">
-  </div>
-  <div class="second-part">
-    <div class="full-card-first-div">
-      <h3 class="second-part-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent</h3>        
+  <div class="full-card">
+    <div class="card-text-cont">
+      <h2 class="card-title">Tonic</h2>
+      <button class="card-xbutton"><i class="full-card-xmark fa-solid fa-xmark"></i></button>
     </div>
-    <div class="full-card-second-div">
-      <ul class="tags full-card-tags">
-        <li class="tag full-card-tag"><a class="html" href="">html</a></li>
-        <li class="tag full-card-tag"><a class="html" href="">CSS</a></li>
-        <li class="tagj full-card-tag"><a class="html" href="">JavaScript</a></li>
-      </ul>
-      <div class="hr-full-card">
-        <hr class="full-card-hr">
+    <div class="card-CANOPY">
+      <h3 class="CANOPY-text-card CANPOY">CANOPY</h3>
+      <i class="counter fa-solid fa-circle"></i>
+      <h3 class="back-end ">Back End Dev</h3>
+      <i class="counter fa-solid fa-circle"></i>
+      <h3 class="back-end">2022</h3>
+    </div>
+    <div class="card-img-continer">
+      <img class="full-card-img" src="Microverse-Student-Project-1/img2.png" alt="">
+    </div>
+    <div class="second-part">
+      <div class="full-card-first-div">
+        <h3 class="second-part-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent</h3>        
       </div>
-      <div class="full-card-buttons">
-        <button class="full-card-button normal">See Live <i class="fa-solid fa-eye"></i></button>
-        <button class="full-card-button normal">See Source <i class="fa-brands fa-github-alt"></i> </button>
-      </div>
-    </div>          
-  </div>     
-</div>
+      <div class="full-card-second-div">
+        <ul class="tags full-card-tags">
+          <li class="tag full-card-tag"><a class="html" href="">html</a></li>
+          <li class="tag full-card-tag"><a class="html" href="">CSS</a></li>
+          <li class="tagj full-card-tag"><a class="html" href="">JavaScript</a></li>
+        </ul>
+        <div class="hr-full-card">
+          <hr class="full-card-hr">
+        </div>
+        <div class="full-card-buttons">
+          <button class="full-card-button normal">See Live <i class="fa-solid fa-eye"></i></button>
+          <button class="full-card-button normal">See Source <i class="fa-brands fa-github-alt"></i> </button>
+        </div>
+      </div>          
+    </div>     
+  </div>
 </div>
 `
+//  popupcard function
+// for (let j = 0; j < list.length; j++){
+//   list[j].addEventListener("click", function () {
+//     popCard.classList.toggle("active");
+//   })
+// }
 
 
 document.getElementById("section3").innerHTML = firstCard + secondCard + thirdCard + forthCard 
+
 
