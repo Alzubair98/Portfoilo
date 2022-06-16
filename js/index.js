@@ -319,11 +319,13 @@ window.addEventListener('load', () =>{
 
   //
 
-  
-  const firstCardElements = document.querySelect(".card");
-  firstCardElements.querySelector('img').src = allCards[0].image;
-  firstCardElements.querySelect('h2').textContent  = allCards[0].name;
-  firstCardElements.querySelect('p').textContent = allCards[0].description;
+  const cardimg = document.querySelector('.card img');
+  cardimg.src = allCards[0].image;
+  const cardh2 = document.querySelector('.card h2');
+  cardh2.textContent = allCards[0].name;
+  const cardp = document.querySelector('.card p');
+  cardp.textContent = allCards[0].description;
+
 
 
 
