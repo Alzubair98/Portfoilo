@@ -52,9 +52,6 @@ for (let j = 0; j < list.length; j++){
 }
 
 
-
-
-
 // cards-objects
 
 const allCards = [
@@ -100,19 +97,59 @@ const allCards = [
 
 // cards-section
 
+const popUpCard = `
+  <div class="full-card-cont">
+    <div class="full-card">
+      <div class="card-text-cont">
+        <h2 class="card-title">Tonic</h2>
+        <button class="card-xbutton"><i class="full-card-xmark fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="card-CANOPY">
+        <h3 class="CANOPY-text-card CANPOY">CANOPY</h3>
+        <i class="counter fa-solid fa-circle"></i>
+        <h3 class="back-end ">Back End Dev</h3>
+        <i class="counter fa-solid fa-circle"></i>
+        <h3 class="back-end">2022</h3>
+      </div>
+      <div class="card-img-continer">
+        <img class="full-card-img" src="Microverse-Student-Project-1/img2.png" alt="">
+      </div>
+      <div class="second-part">
+        <div class="full-card-first-div">
+          <h3 class="second-part-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent</h3>        
+        </div>
+        <div class="full-card-second-div">
+          <ul class="tags full-card-tags">
+            <li class="tag full-card-tag"><a class="html" href="">html</a></li>
+            <li class="tag full-card-tag"><a class="html" href="">CSS</a></li>
+            <li class="tagj full-card-tag"><a class="html" href="">JavaScript</a></li>
+          </ul>
+          <div class="hr-full-card">
+            <hr class="full-card-hr">
+          </div>
+          <div class="full-card-buttons">
+            <button class="full-card-button normal">See Live <i class="fa-solid fa-eye"></i></button>
+            <button class="full-card-button normal">See Source <i class="fa-brands fa-github-alt"></i> </button>
+          </div>
+        </div>          
+      </div>     
+    </div>
+  </div>
+`
+
 const firstCard = `
 
       <div class="card" id="cards">
         <div class="photo">
           <img
             class="work-img"
-            src="Microverse-Student-Project-1/img2.png"
+            src=""
             alt="card-img"
           />
         </div>
         <div class="left-block">
           <div class="primary-text">
-            <h2 class="project-title">Tonic</h2>
+            <h2 class="project-title"></h2>
             <div class="frame-2">
               <div class="Client">
                 <h2 class="CANPOY">CANPOY</h2>
@@ -125,8 +162,7 @@ const firstCard = `
           </div>
           <div class="information">
             <p class="des-text">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
+              
             </p>
           </div>
 
@@ -263,46 +299,9 @@ const forthCard = `
         </div>
       </div>
 `
-const popUpCard = `
-<div class="full-card-cont">
-  <div class="full-card">
-    <div class="card-text-cont">
-      <h2 class="card-title">Tonic</h2>
-      <button class="card-xbutton"><i class="full-card-xmark fa-solid fa-xmark"></i></button>
-    </div>
-    <div class="card-CANOPY">
-      <h3 class="CANOPY-text-card CANPOY">CANOPY</h3>
-      <i class="counter fa-solid fa-circle"></i>
-      <h3 class="back-end ">Back End Dev</h3>
-      <i class="counter fa-solid fa-circle"></i>
-      <h3 class="back-end">2022</h3>
-    </div>
-    <div class="card-img-continer">
-      <img class="full-card-img" src="Microverse-Student-Project-1/img2.png" alt="">
-    </div>
-    <div class="second-part">
-      <div class="full-card-first-div">
-        <h3 class="second-part-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent</h3>        
-      </div>
-      <div class="full-card-second-div">
-        <ul class="tags full-card-tags">
-          <li class="tag full-card-tag"><a class="html" href="">html</a></li>
-          <li class="tag full-card-tag"><a class="html" href="">CSS</a></li>
-          <li class="tagj full-card-tag"><a class="html" href="">JavaScript</a></li>
-        </ul>
-        <div class="hr-full-card">
-          <hr class="full-card-hr">
-        </div>
-        <div class="full-card-buttons">
-          <button class="full-card-button normal">See Live <i class="fa-solid fa-eye"></i></button>
-          <button class="full-card-button normal">See Source <i class="fa-brands fa-github-alt"></i> </button>
-        </div>
-      </div>          
-    </div>     
-  </div>
-</div>
-`
-//  popupcard function
+
+// popupcard function
+
 // for (let j = 0; j < list.length; j++){
 //   list[j].addEventListener("click", function () {
 //     popCard.classList.toggle("active");
@@ -310,6 +309,31 @@ const popUpCard = `
 // }
 
 
-document.getElementById("section3").innerHTML = firstCard + secondCard + thirdCard + forthCard 
+window.addEventListener('load', () =>{
+  cardsSection = document.getElementById("section3")
+  cardsSection.innerHTML =
+    firstCard 
+   + secondCard 
+   + thirdCard 
+   + forthCard 
+
+  //
+
+  
+  const firstCardElements = document.querySelect(".card");
+  firstCardElements.querySelector('img').src = allCards[0].image;
+  firstCardElements.querySelect('h2').textContent  = allCards[0].name;
+  firstCardElements.querySelect('p').textContent = allCards[0].description;
+
+
+
+})
+
+
+
+
+
+
+
 
 
