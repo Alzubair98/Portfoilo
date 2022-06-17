@@ -331,10 +331,10 @@ form.addEventListener('submit', (event) => {
   const email = form.elements.usermail;
   const emailText = email.value;
   const errorMsg = document.querySelector('.error');
-  if (emailText !== emailText.toLowerCase()){
-    errorMsg.classList.toggle('active');
+  if (emailText !== emailText.toLowerCase()) {
+  errorMsg.classList.toggle('active');
     }
   else {
     form.submit();
-  }
+      }
 });
