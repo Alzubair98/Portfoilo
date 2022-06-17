@@ -94,10 +94,10 @@ const popUpCard = `
       </div>
       <div class="card-CANOPY">
         <h3 class="CANOPY-text-card CANPOY">CANOPY</h3>
-        <i class="counter fa-solid fa-circle"></i>
-        <h3 class="back-end ">Back End Dev</h3>
-        <i class="counter fa-solid fa-circle"></i>
-        <h3 class="back-end">2022</h3>
+        <i class="counter counter1 fa-solid fa-circle"></i>
+        <h3 class="back-end back-end-full-card">Back End Dev</h3>
+        <i class="counter counter1 fa-solid fa-circle"></i>
+        <h3 class="back-end back-end-full-card">2022</h3>
       </div>
       <div class="card-img-continer">
         <img class="full-card-img" src="Microverse-Student-Project-1/img2.png" alt="">
@@ -285,13 +285,6 @@ const forthCard = `
       </div>
 `;
 
-// popupcard function
-
-// for (let j = 0; j < list.length; j++){
-//   list[j].addEventListener("click", function () {
-//     popCard.classList.toggle("active");
-//   })
-// }
 
 window.addEventListener('load', () => {
   document.getElementById('section3').innerHTML = firstCard
