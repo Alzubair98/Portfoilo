@@ -323,3 +323,22 @@ window.addEventListener('load', () => {
     fullBody.classList.toggle('active');
   });
 });
+
+const form = document.getElementById("contact-information");
+const formButton = document.querySelector('.contact-btn');
+
+form.addEventListener('submit', (event) =>{
+  event.preventDefault();
+  
+  const email = form.elements.usermail;
+  const emailText = email.value;
+  const errorMsg = document.querySelector('.error')
+
+  if (emailText !== emailText.toLowerCase()){
+    errorMsg.classList.toggle('active');
+    }
+  else{
+    form.submit();
+  }
+  
+})
