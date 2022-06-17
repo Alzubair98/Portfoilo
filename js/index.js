@@ -7,9 +7,6 @@ const continer = document.querySelector('.header');
 const section3 = document.querySelector('.section-3');
 const section4 = document.querySelector('.desk-continer');
 const section5 = document.querySelector('.final-section');
-const list = document.querySelectorAll(".apper");
-const popCard = document.querySelector(".full-card-cont");
-
 
 let i = 0;
 hamburger.addEventListener('click', () => {
@@ -41,16 +38,8 @@ for (i = 0; i < link.length; i += 1) {
     section3.classList.remove('active');
     section4.classList.remove('active');
     section5.classList.remove('active');
-    
   });
 }
-
-for (let j = 0; j < list.length; j++){
-  list[j].addEventListener("click", function () {
-    popCard.classList.toggle("active");
-  })
-}
-
 
 // cards-objects
 
@@ -92,14 +81,13 @@ const allCards = [
     live: 'https://alzubair98.github.io/code-review/',
     source: 'https://github.com/Alzubair98/code-review.git',
   },
-]
-
+];
 
 // cards-section
 
 const popUpCard = `
-  <div class="full-card-cont">
-    <div class="full-card">
+  <div class='full-card-cont'>
+   <div class="full-card">
       <div class="card-text-cont">
         <h2 class="card-title">Tonic</h2>
         <button class="card-xbutton"><i class="full-card-xmark fa-solid fa-xmark"></i></button>
@@ -135,10 +123,10 @@ const popUpCard = `
       </div>     
     </div>
   </div>
-`
+`;
 
 const firstCard = `
-
+    
       <div class="card" id="cards">
         <div class="photo">
           <img
@@ -167,29 +155,29 @@ const firstCard = `
           </div>
 
           <ul class="tags">
-            <li class="tag"><a class="html" href="">html</a></li>
-            <li class="tag"><a class="html" href="">CSS</a></li>
-            <li class="tagj"><a class="html" href="">JavaScript</a></li>
+            <li class="tag"><a class="html" href=""></a></li>
+            <li class="tag"><a class="html" href=""></a></li>
+            <li class="tagj"><a class="html" href=""></a></li>
           </ul>
 
           <div class="action">
             <button class="normal apper" type="button">See Project</button>
           </div>
         </div>
-      </div>`
+      </div>`;
 
 const secondCard = `
       <div class="card">
         <div class="photo">
           <img
             class="work-img work-img1"
-            src="Microverse-Student-Project-1/img3.png"
+            src=""
             alt="card-img"
           />
         </div>
         <div class="left-block left-block1">
           <div class="primary-text">
-            <h2 class="project-title">Multi-Post Stories</h2>
+            <h2 class="project-title"></h2>
             <div class="frame-2">
               <div class="Client">
                 <h2 class="CANPOY">CANPOY</h2>
@@ -202,34 +190,33 @@ const secondCard = `
           </div>
           <div class="information">
             <p class="des-text">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
+              
             </p>
           </div>
 
           <ul class="tags">
-            <li class="tag"><a class="html" href="">html</a></li>
-            <li class="tag"><a class="html" href="">CSS</a></li>
-            <li class="tagj"><a class="html" href="">JavaScript</a></li>
+            <li class="tag"><a class="html" href=""></a></li>
+            <li class="tag"><a class="html" href=""></a></li>
+            <li class="tagj"><a class="html" href=""></a></li>
           </ul>
 
           <div class="action">
             <button class="normal apper" type="button">See Project</button>
           </div>
         </div>
-      </div>`
-const thirdCard=`
+      </div>`;
+const thirdCard = `
       <div class="card">
         <div class="photo">
           <img
             class="work-img"
-            src="Microverse-Student-Project-1/img4.png"
+            src=""
             alt="card-img"
           />
         </div>
         <div class="left-block">
           <div class="primary-text">
-            <h2 class="project-title">Tonic</h2>
+            <h2 class="project-title"></h2>
             <div class="frame-2">
               <div class="Client">
                 <h2 class="CANPOY">CANPOY</h2>
@@ -242,34 +229,33 @@ const thirdCard=`
           </div>
           <div class="information">
             <p class="des-text">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
+              
             </p>
           </div>
 
           <ul class="tags">
-            <li class="tag"><a class="html" href="">html</a></li>
-            <li class="tag"><a class="html" href="">CSS</a></li>
-            <li class="tagj"><a class="html" href="">JavaScript</a></li>
+            <li class="tag"><a class="html" href=""></a></li>
+            <li class="tag"><a class="html" href=""></a></li>
+            <li class="tagj"><a class="html" href=""></a></li>
           </ul>
 
           <div class="action">
             <button class="normal apper" type="button">See Project</button>
           </div>
         </div>
-      </div>`
+      </div>`;
 const forthCard = `
       <div class="card">
         <div class="photo">
           <img
             class="work-img work-img1"
-            src="Microverse-Student-Project-1/img5.png"
+            src=""
             alt="card-img"
           />
         </div>
         <div class="left-block left-block1">
           <div class="primary-text">
-            <h2 class="project-title">Multi-Post Stories</h2>
+            <h2 class="project-title"></h2>
             <div class="frame-2">
               <div class="Client">
                 <h2 class="CANPOY">CANPOY</h2>
@@ -282,15 +268,14 @@ const forthCard = `
           </div>
           <div class="information">
             <p class="des-text">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
+              
             </p>
           </div>
 
           <ul class="tags">
-            <li class="tag"><a class="html" href="">html</a></li>
-            <li class="tag"><a class="html" href="">CSS</a></li>
-            <li class="tagj"><a class="html" href="">JavaScript</a></li>
+            <li class="tag"><a class="html" href=""></a></li>
+            <li class="tag"><a class="html" href=""></a></li>
+            <li class="tagj"><a class="html" href=""></a></li>
           </ul>
 
           <div class="action">
@@ -298,7 +283,7 @@ const forthCard = `
           </div>
         </div>
       </div>
-`
+`;
 
 // popupcard function
 
@@ -308,34 +293,41 @@ const forthCard = `
 //   })
 // }
 
-
-window.addEventListener('load', () =>{
-  cardsSection = document.getElementById("section3")
-  cardsSection.innerHTML =
-    firstCard 
-   + secondCard 
-   + thirdCard 
-   + forthCard 
+window.addEventListener('load', () => {
+  document.getElementById('section3').innerHTML = firstCard
+   + secondCard
+   + thirdCard
+   + forthCard;
 
   //
+  allCards.forEach((cardsData, index) => {
+    const cardsSection = document.getElementById('section3').children[index];
+    cardsSection.querySelector('img').setAttribute('src', cardsData.image);
+    cardsSection.querySelector('h2').textContent = cardsData.name;
+    cardsSection.querySelector('p').textContent = cardsData.description;
+    cardsSection.querySelectorAll('a').forEach((link, item) => {
+      link.textContent = cardsData.technologies[item];
+    });
+  });
 
-  const cardimg = document.querySelector('.card img');
-  cardimg.src = allCards[0].image;
-  const cardh2 = document.querySelector('.card h2');
-  cardh2.textContent = allCards[0].name;
-  const cardp = document.querySelector('.card p');
-  cardp.textContent = allCards[0].description;
+  const popUpDiv = document.createElement('section');
+  popUpDiv.classList.add('theCard', 'hide');
+  popUpDiv.innerHTML = popUpCard;
+  document.getElementById('section3').before(popUpDiv);
 
+  const closePopup = document.querySelector('.full-card-xmark');
+  const wholeCard = document.querySelector('.theCard');
+  const buttons = document.getElementById('section3').querySelectorAll('button');
+  const fullBody = document.body;
+  for (let b = 0; b < buttons.length; b += 1) {
+    buttons[b].addEventListener('click', () => {
+      wholeCard.classList.toggle('hide');
+      fullBody.classList.toggle('active');
+    });
+  }
 
-
-
-})
-
-
-
-
-
-
-
-
-
+  closePopup.addEventListener('click', () => {
+    wholeCard.classList.toggle('hide');
+    fullBody.classList.toggle('active');
+  });
+});

@@ -690,13 +690,30 @@ ul {
 
 .full-card-cont {
   width: 80%;
-  position: absolute;
   margin-left: 10%;
+  backdrop-filter: blur(15px);
+
   /* display: none; */
 }
 
-.full-card-cont.active{
-  display: none;
+.theCard {
+  display: flex;
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+body.active {
+  overflow: hidden;
+}
+
+.theCard.hide {
+  display: none !important;
 }
 
 .full-card {
@@ -704,11 +721,24 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+
   /* padding: 16px; */
   gap: 12px;
   border-radius: 16px;
   background-color: #fff;
   border: 1px solid #dfe1e6;
+}
+
+.show {
+  display: flex;
+}
+
+.full-card.show {
+  display: flex;
+}
+
+.full-card.active {
+  display: none;
 }
 
 .card-text-cont {
@@ -732,7 +762,7 @@ ul {
 
 .card-xbutton {
   margin-top: 8%;
-  height: 10%;
+  height: auto;
   width: 20%;
   background-color: #fff;
   border: none;
@@ -792,7 +822,7 @@ ul {
   height: 15px;
 }
 
-.hr-full-card{
+.hr-full-card {
   width: 100%;
 }
 
@@ -803,7 +833,7 @@ ul {
   border-style: none;
 }
 
-.full-card-second-div{
+.full-card-second-div {
   width: 100%;
 }
 
@@ -1203,38 +1233,60 @@ ul {
 
   /* full-card-section */
 
-  .card-text-cont{
-    width: 95%;
+  .full-card {
+    height: 95%;
+    margin-top: 20px;
   }
 
-  .card-xbutton{
-    margin-top: 4%;
+  .card-text-cont {
+    width: 95%;
+    margin-bottom: 0;
+    height: 5%;
+  }
+
+  .card-xbutton {
+    margin-top: 2%;
     margin-right: 1%;
     width: auto;
   }
 
-  .card-img-continer{
-    width: 95%;
+  .card-img-continer {
+    width: 100%;
+    height: 58%;
+    position: relative;
+    display: flex;
   }
 
-  .second-part{
+  .card-CANOPY {
+    width: 95%;
+    height: 5%;
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+
+  .full-card-img {
+    width: 97%;
+    margin-left: 1.5%;
+  }
+
+  .second-part {
     display: flex;
     flex-direction: row;
+    height: 18%;
   }
 
-
-  .full-card-first-div{
+  .full-card-first-div {
     width: 60%;
   }
 
-  .full-card-second-div{
+  .full-card-second-div {
     display: flex;
     flex-direction: column;
     width: 40%;
   }
 
-  .second-part-text{
-    height: 300px;
+  .second-part-text {
+    height: 100%;
     line-height: 40px;
   }
 }
