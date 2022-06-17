@@ -332,8 +332,9 @@ form.addEventListener('submit', (event) => {
   const emailText = email.value;
   const errorMsg = document.querySelector('.error');
   if (emailText !== emailText.toLowerCase()) {
-    errorMsg.classList.toggle('active');
+    errorMsg.classList.add('active');
   } else {
     form.submit();
+    errorMsg.classList.toggle('active')
   }
 });
