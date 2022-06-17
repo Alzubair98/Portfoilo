@@ -335,6 +335,6 @@ form.addEventListener('submit', (event) => {
     errorMsg.classList.add('active');
   } else {
     form.submit();
-    errorMsg.classList.toggle('active');
+    errorMsg.classList.remove('active');
   }
 });
