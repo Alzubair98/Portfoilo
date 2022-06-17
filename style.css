@@ -859,6 +859,17 @@ body.active {
   width: 60%;
 }
 
+.error {
+  position: relative;
+  bottom: -20px;
+  color: black;
+  display: none;
+}
+
+.error.active {
+  display: flex;
+}
+
 /* Desktop-version */
 
 @media (min-width: 768px) {
