@@ -339,28 +339,26 @@ form.addEventListener('submit', (event) => {
   }
 });
 
+// local storage
 
-// local storage 
-
-const username = form.elements.username;
+const { username } = form.elements;
 const theEmail = form.elements.usermail;
 const userMsg = form.elements.usermsg;
 
-
 // local storage
 
-form.addEventListener('input', ()=>{
+form.addEventListener('input', () => {
   const theInputs = {
     Name: username.value,
     Email: theEmail.value,
     msg: userMsg.value,
-  }
+  };
   const allData = JSON.stringify(theInputs);
   localStorage.setItem('data', allData);
 });
 
 function reTakeData() {
-  if (localStorage.getItem('data')){
+  if (localStorage.getItem('data')) {
     const fullData = JSON.parse(localStorage.getItem('data'));
     username.value = fullData.Name;
     userMsg.value = fullData.msg;
