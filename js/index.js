@@ -285,7 +285,6 @@ const forthCard = `
       </div>
 `;
 
-
 window.addEventListener('load', () => {
   document.getElementById('section3').innerHTML = firstCard
    + secondCard
