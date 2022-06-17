@@ -1,2 +1,4 @@
 text.md
-node_modules/
+node_modules
+.stylelintrc.json
+.eslintrc.json

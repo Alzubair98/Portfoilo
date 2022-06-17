@@ -686,6 +686,179 @@ ul {
   left: 0;
 }
 
+/* full card  */
+
+.full-card-cont {
+  width: 80%;
+  margin-left: 10%;
+  backdrop-filter: blur(15px);
+
+  /* display: none; */
+}
+
+.theCard {
+  display: flex;
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  overflow: scroll;
+}
+
+body.active {
+  overflow: hidden;
+}
+
+.theCard.hide {
+  display: none !important;
+}
+
+.full-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 95%;
+  margin-top: 5%;
+  gap: 12px;
+  border-radius: 16px;
+  background-color: #fff;
+  border: 1px solid #dfe1e6;
+}
+
+.show {
+  display: flex;
+}
+
+.full-card.show {
+  display: flex;
+}
+
+.full-card.active {
+  display: none;
+}
+
+.card-text-cont {
+  height: 30px;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+  gap: 12px;
+}
+
+.card-title {
+  width: 50%;
+  height: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  margin-top: 0%;
+}
+
+.card-xbutton {
+  height: auto;
+  width: 20%;
+  background-color: #fff;
+  border: none;
+  margin-top: 3%;
+}
+
+.full-card-xmark {
+  color: #67798e;
+  font-size: 1.5rem;
+}
+
+.card-CANOPY {
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0%;
+  gap: 12px;
+  width: 90%;
+}
+
+.CANOPY-text-card {
+  color: #344563;
+}
+
+.card-img-continer {
+  width: 90%;
+}
+
+.full-card-img {
+  width: 100%;
+}
+
+.second-part {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  padding: 0% 16px 0% 16px;
+}
+
+.second-part-text {
+  color: #344563;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  margin-top: 0%;
+  width: 98%;
+  text-align: left;
+}
+
+.full-card-tags {
+  margin-top: 0;
+  order: 0;
+}
+
+.full-card-tag {
+  height: 15px;
+}
+
+.hr-full-card {
+  width: 100%;
+}
+
+.full-card-hr {
+  background-color: #ebecf0;
+  width: 100%;
+  height: 1px;
+  border-style: none;
+}
+
+.full-card-second-div {
+  width: 100%;
+  margin-top: 0%;
+  height: 30%;
+  position: relative;
+  bottom: 15px;
+}
+
+.full-card-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  gap: 15px;
+  margin-left: 4%;
+  margin-bottom: 20px;
+}
+
+.full-card-button {
+  width: 60%;
+}
+
 /* Desktop-version */
 
 @media (min-width: 768px) {
@@ -693,7 +866,7 @@ ul {
     margin: 0;
   }
 
-  footer {
+  .final-section {
     width: 100%;
     height: 920px;
     position: relative;
@@ -701,6 +874,14 @@ ul {
     padding: 0%;
     z-index: 0;
   }
+
+  /* .final-section {
+    background-color: white;
+    width: 100%;
+    height: 920px;
+    position: absolute;
+    z-index: -2;
+  } */
 
   .button1 {
     display: none;
@@ -710,13 +891,28 @@ ul {
     display: none;
   }
 
+  .orders-cont {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    position: absolute;
+  }
+
+  .x-button {
+    display: none;
+  }
+
   .orders {
     display: flex;
+    flex-direction: row;
     gap: 15px;
     color: #344563;
     text-decoration: none;
-    margin-top: 2%;
-    margin-right: 7%;
+    width: 20%;
+    margin-left: 70%;
+    margin-top: 3%;
   }
 
   .container {
@@ -925,14 +1121,6 @@ ul {
 
   /* contact me section */
 
-  .final-section {
-    background-color: white;
-    width: 100%;
-    height: 920px;
-    position: absolute;
-    z-index: -2;
-  }
-
   .contact-me-img {
     background: url(Microverse-Student-Project-1/fimg.png)  #6070ff no-repeat;
     background-size: 99%;
@@ -1049,5 +1237,86 @@ ul {
     to {
       margin-left: 0%;
     }
+  }
+
+  /* full-card-section */
+
+  .full-card {
+    height: 95%;
+    margin-top: 20px;
+    gap: 5px;
+  }
+
+  .card-text-cont {
+    width: 95%;
+    margin-bottom: 0;
+    height: 5%;
+  }
+
+  .card-title {
+    height: 100%;
+    margin-top: 0%;
+  }
+
+  .card-xbutton {
+    margin-top: 0%;
+    margin-right: 1%;
+    width: auto;
+  }
+
+  .card-img-continer {
+    width: 100%;
+    height: 60%;
+    position: relative;
+    display: flex;
+  }
+
+  .card-CANOPY {
+    width: 95%;
+    height: 3%;
+    margin-top: 1.5%;
+    margin-bottom: 0;
+  }
+
+  .CANOPY-text-card {
+    margin-top: 0%;
+  }
+
+  .counter1 {
+    margin-top: -9px;
+    font-size: 0.8rem;
+  }
+
+  .back-end-full-card {
+    margin-top: 0.5%;
+  }
+
+  .full-card-img {
+    width: 97%;
+    margin-left: 1.5%;
+  }
+
+  .second-part {
+    display: flex;
+    flex-direction: row;
+    height: 26%;
+  }
+
+  .full-card-first-div {
+    width: 60%;
+    height: 100%;
+    text-align: right;
+  }
+
+  .full-card-second-div {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    bottom: 0%;
+  }
+
+  .second-part-text {
+    height: 100%;
+    line-height: 22px;
   }
 }
