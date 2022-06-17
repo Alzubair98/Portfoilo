@@ -289,10 +289,10 @@ window.addEventListener('load', () => {
   document.getElementById('section3').innerHTML = firstCard
    + secondCard
    + thirdCard
-     forthCard;
+   + forthCard;
 
   //
-  allCards.forEach((cardsData, index) => 
+  allCards.forEach((cardsData, index) => {
     const cardsSection = document.getElementById('section3').children[index];
     cardsSection.querySelector('img').setAttribute('src', cardsData.image);
     cardsSection.querySelector('h2').textContent = cardsData.name;
@@ -312,13 +312,13 @@ window.addEventListener('load', () => {
   const buttons = document.getElementById('section3').querySelectorAll('button');
   const fullBody = document.body;
   for (let b = 0; b < buttons.length; b += 1) {
-    buttons[b].addEventListener('click', () > {
+    buttons[b].addEventListener('click', () => {
       wholeCard.classList.toggle('hide');
       fullBody.classList.toggle('active');
     });
   }
 
-  closePopup.addEventListener('click', () > {
+  closePopup.addEventListener('click', () => {
     wholeCard.classList.toggle('hide');
     fullBody.classList.toggle('active');
   });
@@ -326,7 +326,7 @@ window.addEventListener('load', () => {
 
 const form = document.getElementById('contact-information');
 
-form.addEventListener('submit', (event) > {
+form.addEventListener('submit', (event) => {
   event.preventDefault();
   const email = form.elements.usermail;
   const emailText = email.value;
