@@ -1,8 +1,6 @@
 
 # Project Name
 popup card for both mobile and desktop 
-# Project Link
-https://alzubair98.github.io/code-review/
 
 > Description the project.
 adding the cards & popup card daynamiclly using javaScripts
@@ -15,7 +13,7 @@ adding the cards & popup card daynamiclly using javaScripts
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://alzubair98.github.io/code-review/)
+[Live Demo Link](https://alzubair98.github.io/Portfoilo/)
 
 To get a local copy up and running follow these simple example steps.
 
